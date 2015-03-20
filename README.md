@@ -75,7 +75,7 @@ The storage-module.zip server profiles for both standalone and domain mode that 
 The service configuration can be accessed like any other wildfly resource:
 
 <pre>
-`[standalone@localhost:9990 /] /subsystem=cassandra/cluster=WildflyCluster:read-resource
+`[standalone@localhost:9990 /] /subsystem=storage/cluster=WildflyCluster:read-resource
  {
      "outcome" => "success",
      "result" => {

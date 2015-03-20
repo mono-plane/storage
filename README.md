@@ -2,6 +2,8 @@
 
 # Storage Subsystem
 
+The storage subsystem for monoplane data.
+
 ## Prerequisites
 
 ### Wildfly 8.1.0

@@ -140,6 +140,27 @@
                     </execution>
                 </executions>
             </plugin-->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <id>enforce-java</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>1.8</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -276,9 +297,9 @@
 
         <!-- not part of cassandra-all.jar -->
         <dependency>
-        	<groupId>org.yaml</groupId>
-        	<artifactId>snakeyaml</artifactId>
-        	<version>1.13</version>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.13</version>
         </dependency>
 
         <dependency>
